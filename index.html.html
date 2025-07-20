@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joe Yiu – Mortgage Agent In Ontario</title>
+  <style>
+  .knowledge-section {
+    background: #f9fbff;
+    padding: 2.5rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    max-width: 900px;
+    margin: 3rem auto;
+  }
+
+  .knowledge-section h2 {
+    font-size: 1.8rem;
+    color: #002f6c;
+    margin-bottom: 0.8rem;
+  }
+
+  .knowledge-section p {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+
+  .article-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .article-list li {
+    margin-bottom: 1.2rem;
+    background: #ffffff;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .article-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    background-color: #f0f8ff;
+  }
+
+  .article-list li::before {
+    content: "📘";
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  .article-list a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: #002f6c;
+    transition: color 0.3s;
+  }
+
+  .article-list a:hover {
+    color: #ff6600;
+  }
+
+  .knowledge-credit {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 2rem;
+    line-height: 1.6;
+    border-top: 1px solid #ddd;
+    padding-top: 1.2rem;
+  }
+</style>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #e6f0ff, #ffffff);
+      overflow-x: hidden;
+    }
+    header {
+      background: #002f6c;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      animation: slideDown 1s ease-out;
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nav-bar a, .apply-btn {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .nav-bar a:hover, .apply-btn:hover {
+      color: #ffcc00;
+    }
+    .apply-btn {
+      background: #ff6600;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+    }
+    .hero {
+      position: relative;
+      color: #fff;
+      padding: 5rem 1rem;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1600607681847-8f9b5aa98c1b?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+    .hero h1, .hero p {
+      position: relative;
+      z-index: 2;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+    .profile-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 900px;
+      margin: 2rem auto;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .profile-card img {
+      width: 220px;
+      border-radius: 12px;
+    }
+    .about-section {
+      background: #f9f9f9;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .contact-btn {
+      padding: 0.5rem 1rem;
+      background-color: #ff6b00;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .contact-btn:hover {
+      background-color: #e55b00;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 80px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.6);
+    }
+    .modal-content {
+      background-color: #fff;
+      margin: auto;
+      padding: 2rem;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 500px;
+    }
+    .modal-content input,
+    .modal-content textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .close {
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .icon {
+      width: 16px;
+      height: 16px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e0e0e0;
+      font-size: 0.9rem;
+      color: #333;
+    }
+  </style>
+  <script>
+    function showAbout() {
+      document.getElementById('about-me').scrollIntoView({ behavior: 'smooth' });
+    }
+    function openModal() {
+      document.getElementById("contactModal").style.display = "block";
+    }
+    function closeModal() {
+      document.getElementById("contactModal").style.display = "none";
+    }
+    window.onclick = function(event) {
+      const modal = document.getElementById("contactModal");
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+    function sendEmail() {
+    const name = document.querySelector('#contactModal input[type="text"]').value;
+    const email = document.querySelector('#contactModal input[type="email"]').value;
+    const message = document.querySelector('#contactModal textarea').value;
+
+    const subject = `Mortgage Inquiry from ${encodeURIComponent(name)}`;
+    const body = `Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(message)}`;
+
+    const mailtoLink = `mailto:joe.yiu@teambreezeful.com?subject=${subject}&body=${body}`;
+
+    window.location.href = mailtoLink;
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">Your Professional Mortgage Agent</div>
+    <div class="nav-bar">
+      <a href="https://breezeful.com/brokerage-agent/joe-yiu" class="apply-btn">Apply Now</a>
+      <a href="javascript:void(0);" onclick="showAbout()">About Me</a>
+      <a href="#mortgage-knowledge">Mortgage Knowledge</a>
+      <a href="https://breezeful.com/brokerage-agent/joe-yiu/mortgage-calculator" target="_blank">Calculator</a>
+      <a href="#" onclick="openModal()">Contact</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Helping Ontarians Make Smart Mortgage Choices</h1>
+    <p>Your trusted partner in finding the right home financing solution</p>
+  </section>
+
+  <section class="profile-card">
+    <img src="joejoe3.jpg" alt="Joe Yiu Portrait" />
+    <div>
+      <h2>Joe Yiu</h2>
+      <h3>Mortgage Agent Level 1</h3>
+      <p><strong>License #:</strong>M24001353</p>
+      <p><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">joe.yiu@teambreezeful.com</p>
+      <p><img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">(226) 378-8132</p>
+      <p><strong>Location:</strong> London, Ontario</p>
+      <button class="contact-btn" onclick="openModal()">Contact Joe</button>
+    </div>
+  </section>
+
+  <section id="about-me" class="about-section">
+    <h2>About Me</h2>
+    <p>Hi, I’m Joe Yiu, a licensed mortgage agent in Ontario (License No. M24001353) with the Breezeful team.
+
+I hold a Master’s degree from Western University and have years of experience helping individuals and families navigate important life decisions, from education to real estate. Today, I focus on helping clients across Ontario make smart, stress-free mortgage decisions, no matter their background or financial situation.
+
+I work with a wide network of A lenders, B lenders, and private lenders. This allows me to find the best mortgage solution tailored to your unique needs, whether you're: A first-time homebuyer; A self-employed business owner ;A newcomer to Canada with limited local credit or Someone looking to refinance or invest. I’m passionate about simplifying complex mortgage processes and supporting my clients every step of the way, from pre-approval to closing. I pride myself on being responsive, knowledgeable, and approachable. You won’t just get a mortgage – you’ll gain a long-term advisor who truly cares.
+
+If you have questions, need a second opinion, or just want to explore your options, I’d be happy to connect.</p>
+
+<section id="mortgage-knowledge" class="knowledge-section">
+  <h2>Mortgage Knowledge</h2>
+  <p>Explore helpful mortgage insights to guide your home financing decisions:</p>
+
+  <ul class="article-list">
+    <li>
+      <a href="article/what-is-a-lender2.html.html" target="_blank">
+        Many People Think A Lenders Are Just the Big Five Banks — But There Are More Options
+      </a>
+    </li>
+    <li>
+      <a href="article/work-with-agent.html" target="_blank">
+        Why Work with a Mortgage Agent Instead of a Bank: Key Benefits at a Glance
+      </a>
+    </li>
+    <li>
+      <a href="article/what-is-blender.html" target="_blank">
+        Can Newcomers Apply for an A-Lender Mortgage? Understanding How Lenders Support Newcomers in Canada
+      </a>
+    </li>
+    <li>
+      <a href="article/newcomers-guide.html" target="_blank">
+        How B-Lenders Help Newcomers Achieve Homeownership in Canada
+      </a>
+    </li>
+  </ul>
+
+  <div class="knowledge-credit">
+    All articles are originally written by <strong>Joe Yiu</strong>, with the goal of explaining mortgage knowledge in the simplest and most understandable way. If you wish to share or repost, please kindly credit the source.
+  </div>
+</section>
+
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3>Contact Me</h3>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button class="contact-btn" onclick="sendEmail()">Send</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Joe Yiu – Licensed Mortgage Agent | Powered by Breezeful
+  </footer>
+</body>
+</html>

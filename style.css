@@ -1,0 +1,145 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+.top-bar {
+  background: #1a1a1a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.top-bar .logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.top-bar nav a {
+  margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+}
+.apply-btn {
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+]
+.hero {
+  position: relative;
+  color: #fff;
+  padding: 5rem 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* 半透明黑色遮罩 */
+  z-index: 1;
+}
+
+.hero h1, .hero p {
+  position: relative;
+  z-index: 2;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1600607681847-8f9b5aa98c1b?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+}
+
+}
+.profile-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+  width: 100%;
+}
+.agent-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 2rem;
+}
+.agent-info h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+.agent-info h2 {
+  margin-top: 0.25rem;
+  color: #555;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  font-size: 0.9rem;
+}
+.agent-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b2a41;
+  color: white;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+}
+.profile-left {
+  flex: 1;
+  min-width: 300px;
+}
+.profile-left h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
+}
+.profile-left h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #ffa500;
+}
+.profile-left p {
+  margin: 0.6rem 0;
+  font-size: 1rem;
+}
+.button-group a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  margin: 1rem 0.5rem 0 0;
+  text-decoration: none;
+  color: white;
+  background-color: #ff6b00;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.button-group a.apply {
+  background-color: transparent;
+  border: 2px solid white;
+}
+.profile-right {
+  flex: 1;
+  text-align: center;
+}
+.profile-right img {
+  width: 280px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}

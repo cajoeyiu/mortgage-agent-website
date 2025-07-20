@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Why Work with a Mortgage Agent | Joe Yiu</title>
+  <meta name="description" content="Learn the benefits of working with a mortgage agent vs. going directly to a bank. Save time, money, and get expert support.">
+  <meta name="keywords" content="mortgage agent vs bank, mortgage benefits, Joe Yiu, Ontario mortgage help, first-time buyer support">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(to bottom, #eaf3ff, #ffffff);
+      color: #333;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 3rem auto;
+      background: #fff;
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #002f6c;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      color: #ff6600;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin-top: 0.5rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin: 1.2rem 0;
+      list-style: none;
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #ff6600;
+      font-weight: bold;
+    }
+
+    .summary {
+      background: #fff8ed;
+      border-left: 6px solid #ff9900;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      margin: 2.5rem 0;
+    }
+
+    .cta-box {
+      background: #002f6c;
+      color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .cta-box p {
+      margin: 0.5rem 0;
+    }
+
+    .cta-box a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.4rem;
+      background-color: #ff6600;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .cta-box a:hover {
+      background-color: #cc5200;
+    }
+
+    .footer-note {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 3rem;
+      border-top: 1px solid #ccc;
+      padding-top: 1.2rem;
+      text-align: center;
+    }
+
+    .back-button {
+      margin-top: 1.5rem;
+      display: inline-block;
+      text-decoration: none;
+      color: #002f6c;
+      font-weight: bold;
+    }
+
+    .back-button:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Why Work with a Mortgage Agent Instead of a Bank</h1>
+    <p><strong>Key Benefits at a Glance:</strong></p>
+
+    <ul>
+      <li><strong>Save Time and Money</strong><br>
+        We do not charge fees for standard mortgage applications with major lenders. Instead of visiting multiple banks, we help you compare the best rates and terms using only one credit check. This saves you time and protects your credit score.
+      </li>
+
+      <li><strong>More Options and Personalized Solutions</strong><br>
+        We work with a wide range of banks and lenders to provide mortgage solutions tailored to your financial situation. Whether you are a first-time buyer, self-employed, or a newcomer, we can help.
+      </li>
+
+      <li><strong>Experience with Complex Cases</strong><br>
+        If your income is non-traditional or you are new to Canada, we understand how to prepare your file to meet lender requirements and improve your approval chances.
+      </li>
+
+      <li><strong>Full Support Beyond Office Hours</strong><br>
+        We guide you through every step of the mortgage process and are available evenings and weekends to answer your questions and keep things on track.
+      </li>
+
+      <li><strong>Professional Review Before Submission</strong><br>
+        Our experienced underwriters review your documents in advance to make sure everything meets lender standards. This avoids mistakes that could affect future applications.
+      </li>
+    </ul>
+
+    <div class="summary">
+      <strong>In summary:</strong><br>
+      We offer more choice, better rates, expert advice, and dedicated support — all at no extra cost.
+    </div>
+
+    <div class="cta-box">
+      <p>✅ Have questions about mortgages or wondering if you qualify?</p>
+      <p>I’m happy to offer free advice and help you explore your options.</p>
+
+      <p>📞 Phone / WhatsApp: <strong>226-378-8132</strong><br>
+         💬 WeChat: <strong>yiu007008</strong><br>
+         📧 Email: <strong>joe.yiu@teambreezeful.com</strong></p>
+
+      <a href="mailto:joe.yiu@teambreezeful.com">Contact Joe Today</a>
+    </div>
+
+    <div class="footer-note">
+      📌 This article was written by <strong>Joe Yiu</strong> with the goal of explaining mortgage knowledge in the simplest and most understandable way.<br>
+      If you wish to share or repost, please kindly credit the original source.<br>
+      <em>Last updated: July 11, 2025</em><br><br>
+      <a class="back-button" href="../main-page.html">← Back to Home</a>
+    </div>
+  </div>
+
+</body>
+</html>
